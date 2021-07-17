@@ -5,6 +5,7 @@ import HomePage from "./views/HomePage";
 import Articles from "./views/Articles";
 import Article1 from "./views/Article1";
 import Article2 from "./views/Article2";
+import Article3 from "./views/Article3";
 import Chat from "./views/Chat";
 import Register from "./views/Register";
 import AboutUs from "./views/AboutUs";
@@ -31,6 +32,10 @@ function App() {
 
           <Route path="/article2">
             <Article2 />
+          </Route>
+
+          <Route path="/article3">
+            <Article3 />
           </Route>
 
           <Route path="/chat">

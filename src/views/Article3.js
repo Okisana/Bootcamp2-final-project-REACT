@@ -1,11 +1,10 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-// import image1 from "../images/t1.webp";
-import image2 from "../images/t3.jpg";
-import image3 from "../images/t2.jpg";
-import image4 from "../images/t1.webp";
+import image2 from "../images/tro3.jpg";
+import image3 from "../images/tro2.webp";
+import image4 from "../images/tro1.webp";
 
-function Article2() {
+function Article3() {
   const images = [image2, image3, image4];
 
   const [BigImage, setImage] = useState(image4);
@@ -20,7 +19,7 @@ function Article2() {
         <img
           onClick={updateImage}
           className="imgRow img-fluid"
-          style={{ maxWidth: "100%", marginBottom: "10px" }}
+          style={{ maxWidth: "90%", marginBottom: "10px" }}
           src={imgElement}
           alt=""
         />
@@ -44,7 +43,7 @@ function Article2() {
               </NavLink>
             </li>
             <li class="breadcrumb-item active" aria-current="page">
-              All about tops
+              All about trousers
             </li>
           </ol>
         </nav>
@@ -56,9 +55,9 @@ function Article2() {
                 <img
                   id="bigImage"
                   style={{
-                    width: "250px",
+                    width: "230px",
                     height: " 300px",
-                    marginLeft: "30px",
+                    marginLeft: "50px",
                   }}
                   src={BigImage}
                   alt=""
@@ -99,4 +98,4 @@ function Article2() {
     </div>
   );
 }
-export default Article2;
+export default Article3;
