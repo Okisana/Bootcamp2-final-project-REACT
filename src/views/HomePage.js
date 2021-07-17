@@ -128,7 +128,7 @@ function HomePage() {
                 </div>
                 <div className="col-md-8">
                   <div className="card-body">
-                    <NavLink className=" card-title" to="/categories">
+                    <NavLink className=" card-title" to="/articles">
                       SS21 Spring story
                     </NavLink>
                     <p className="card-text ">
@@ -154,7 +154,7 @@ function HomePage() {
                 </div>
                 <div className="col-md-8">
                   <div className="card-body">
-                    <NavLink className="card-title" to="/categories">
+                    <NavLink className="card-title" to="/articles">
                       SS2 Campaign
                     </NavLink>
                     <p className="card-text">
@@ -181,7 +181,7 @@ function HomePage() {
 
                 <div className="col-md-8">
                   <div className="card-body">
-                    <NavLink className="card-title" to="/categories">
+                    <NavLink className="card-title" to="/articles">
                       SS21 LookBook
                     </NavLink>
                     <p className="card-text">
