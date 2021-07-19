@@ -1,10 +1,43 @@
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import "./Style2.css";
 import registerImg from "../images/registerImg.jpg";
 
 function Register() {
+  const [password, setPassword] = useState("");
+  const [repeatPassword, setRepeatPassword] = useState("");
+  const getPassword = (event) => {
+    setPassword(event.target.value);
+  };
+  const getRepeatPassword = (event) => {
+    setRepeatPassword(event.target.value);
+  };
+
+  if (password !== "" && repeatPassword !== "") {
+    if (repeatPassword.length >= 8 && password.length >= 8) {
+      if (repeatPassword !== password) {
+        alert("Both passwords are not matching. Please try again!");
+        // setPassword("");
+        // setRepeatPassword("");
+      }
+    }
+  }
+
   return (
     <div className="container text-dark mt-4">
+      <nav className="mt-2">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <NavLink class="pageLink" exact to="/">
+              Home
+            </NavLink>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Login
+          </li>
+        </ol>
+      </nav>
+
       <h3 className="mb-4">Register:</h3>
 
       <div className="row d-flex justify-content-between">
@@ -22,6 +55,10 @@ function Register() {
             </div>
             <div className="mb-3">
               <input
+                pattern="(?=.*[a-z]).{8,}$"
+                title="Must contain minimum 8 symbols"
+                onChange={getPassword}
+                value={password}
                 type="password"
                 className="form-control"
                 id="password"
@@ -32,6 +69,9 @@ function Register() {
             </div>
             <div className="mb-3">
               <input
+                pattern="(?=.*[a-z]).{8,}$"
+                title="Must contain minimum 8 symbols"
+                onChange={getRepeatPassword}
                 type="password"
                 className="form-control"
                 id="password-repeat"
@@ -63,7 +103,6 @@ function Register() {
                 className="form-select"
                 id="select-country"
                 name="selectcountry"
-                required
               >
                 <option selected disabled>
                   Country*
@@ -92,7 +131,7 @@ function Register() {
               <input
                 className="fw-bold btn btn-warning submit"
                 type="submit"
-                value="Submit form"
+                value="Register"
               />
             </div>
           </form>
