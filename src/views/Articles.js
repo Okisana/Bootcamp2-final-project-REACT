@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import "./Style2.css";
 import dressCatImg from "../images/drc2.jpg";
 import topCatImg from "../images/tc2.jpg";
 import trousersCatImg from "../images/trc2.jpg";

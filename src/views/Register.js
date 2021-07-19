@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import "./Style2.css";
 import registerImg from "../images/registerImg.jpg";
 
 function Register() {
@@ -24,8 +23,8 @@ function Register() {
   }
 
   return (
-    <div className="container text-dark mt-4">
-      <nav className="mt-2">
+    <div className="container text-dark px-5">
+      <nav className="">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
             <NavLink class="pageLink" exact to="/">
@@ -38,10 +37,10 @@ function Register() {
         </ol>
       </nav>
 
-      <h3 className="mb-4">Register:</h3>
+      <h5 className="mb-1">Register:</h5>
 
       <div className="row d-flex justify-content-between">
-        <div className="col-12 col-md-4 offset-1">
+        <div className="col-12 col-md-5">
           <form className="g-3" id="register-form" action="">
             <div className="mb-3">
               <input
@@ -129,7 +128,7 @@ function Register() {
             </div>
             <div className="d-grid mb-3">
               <input
-                className="fw-bold btn btn-warning submit"
+                className="fw-bold btn btn-danger submit"
                 type="submit"
                 value="Register"
               />
