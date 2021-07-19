@@ -10,7 +10,7 @@ function Header() {
               className="img-fluid"
               src="https://images-platform.99static.com/wxW0MGWKZG4a81naQ5NIwsY3GUY=/118x183:1063x1128/500x500/top/smart/99designs-contests-attachments/102/102364/attachment_102364155"
               style={{
-                maxWidth: "12%",
+                maxWidth: "11%",
               }}
             />
           </NavLink>
@@ -30,7 +30,7 @@ function Header() {
             className="collapse navbar-collapse flex-row-reverse"
             id="navbarNav"
           >
-            <ul className="navbar-nav text-end">
+            <ul className="navbar-nav text-center">
               <li className="nav-item">
                 <NavLink className="nav-link navBgColor" exact to="/">
                   Home

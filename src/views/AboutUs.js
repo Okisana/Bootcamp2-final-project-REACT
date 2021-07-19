@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import product7 from "../images/dMidi.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import team from "../images/team.jpg";
 import history from "../images/history.jpg";
@@ -12,7 +11,6 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 
-import { useState } from "react";
 function AboutUs() {
   return (
     <div className="container">
@@ -35,7 +33,7 @@ function AboutUs() {
           id="pills-tab"
           role="tablist"
         >
-          <li className="nav-item border" role="presentation">
+          <li className="nav-item border " role="presentation">
             <button
               className="nav-link tabs active btnColor"
               id="pills-product-tab"

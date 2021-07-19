@@ -1,4 +1,4 @@
-import "./Style1.css";
+import "../css/Style.css";
 import { NavLink } from "react-router-dom";
 import trousersCat from "../images/hs2.webp";
 import topsCat from "../images/hs3.webp";

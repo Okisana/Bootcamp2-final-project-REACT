@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-// import image1 from "../images/t1.webp";
 import image2 from "../images/t3.jpg";
 import image3 from "../images/t2.jpg";
 import image4 from "../images/t1.webp";
