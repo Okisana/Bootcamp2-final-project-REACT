@@ -70,27 +70,23 @@ function Article3() {
 
           <div className="col-10 col-md-8">
             <p className="p3">
-              The A-line shape is characteristic of a silhouette that gradually
-              widens towards the hemline, giving the impression of the shape of
-              a capital A. The best part about this type of top is that it suits
-              almost all body types. Not too fitted, not too loose, an A-line
-              top will be perfect for any occasion.
+              You can never go wrong with a pair of palazzo pants as they are
+              very fashionable. They are also known to be quite airy. The more
+              tailored ones can be worn to the office with a well-fitted shirt.
+              They also go well with pumps and stilettos.
             </p>
             <p className="p3">
-              A blouson top or a blouse is typically a flowing type of top for
-              women with a fitted or elasticated waistband and is anything but
-              basic. These babies look the best with skinny jeans and
-              wide-legged pants alike, and are timeless. Usually, a blouson top
-              comes with three-fourth length or long sleeves, but it can also
-              come with a statement-making sleeve style.
+              Tailored trousers are mostly worn to the office and for formal
+              events. They also look very nice as they are well-fitted on the
+              body. The only downside is that you have to iron them every time.
             </p>
 
             <p className="p3">
-              A bodysuit is a one-piece, form-fitting garment that covers the
-              torso and the crotch. You can think of its style like that of a
-              swimsuit. The best part about a bodysuit is that it doubles up as
-              a body shaper, while staying stylish. Team it with any kind of
-              bottoms and enjoy your day carefreely.
+              Wide-leg pants make your legs look longer. The best ones are tight
+              on top and pool over at the bottom. They can be worn anywhere; to
+              the office, a party or get them in jeans for your casual
+              activities. They help women with slim body types to look more
+              well-rounded.
             </p>
           </div>
         </div>
