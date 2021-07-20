@@ -12,15 +12,16 @@ function Register() {
     setRepeatPassword(event.target.value);
   };
 
-  if (password !== "" && repeatPassword !== "") {
-    if (repeatPassword.length >= 8 && password.length >= 8) {
-      if (repeatPassword !== password) {
-        alert("Both passwords are not matching. Please try again!");
-        // setPassword("");
-        // setRepeatPassword("");
+  const onSubmit = (event) => {
+    if (password !== "" && repeatPassword !== "") {
+      if (password.length >= 8) {
+        if (repeatPassword !== password) {
+          alert("Both passwords are not matching. Please try again!");
+          event.preventDefault();
+        }
       }
     }
-  }
+  };
 
   return (
     <div className="container text-dark px-5">
@@ -41,7 +42,12 @@ function Register() {
 
       <div className="row d-flex justify-content-between">
         <div className="col-12 col-md-5">
-          <form className="g-3" id="register-form" action="">
+          <form
+            className="g-3"
+            id="register-form"
+            onSubmit={onSubmit}
+            action=""
+          >
             <div className="mb-3">
               <input
                 type="text"
