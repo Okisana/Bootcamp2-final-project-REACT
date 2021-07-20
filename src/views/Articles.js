@@ -23,7 +23,11 @@ function Articles() {
         <div class="card mb-3 articleEl">
           <div class="row g-0">
             <div class="col-12 col-md-3 px-5 py-2">
-              <img class="img-fluid cardImage" src={dressCatImg} alt="image" />
+              <img
+                class="img-fluid cardImage"
+                src={dressCatImg}
+                alt="dresses"
+              />
             </div>
             <div class="col-12 col-md-9">
               <div class="card-body">
@@ -53,7 +57,7 @@ function Articles() {
         <div class="card mb-3 articleEl">
           <div class="row g-0">
             <div class="col-12 col-md-3 px-5 py-2">
-              <img class="img-fluid cardImage" src={topCatImg} alt=".image" />
+              <img class="img-fluid cardImage" src={topCatImg} alt="tops" />
             </div>
             <div class="col-12 col-md-9">
               <div class="card-body">
@@ -87,7 +91,7 @@ function Articles() {
               <img
                 class="img-fluid cardImage"
                 src={trousersCatImg}
-                alt="image"
+                alt="trousers"
               />
             </div>
             <div class="col-12 col-md-9">

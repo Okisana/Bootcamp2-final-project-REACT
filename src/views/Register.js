@@ -146,7 +146,7 @@ function Register() {
             className="img-fluid rounded border"
             src={registerImg}
             style={{ maxWidth: "60%" }}
-            alt="cat-image"
+            alt="Womanimage"
           />
         </div>
       </div>

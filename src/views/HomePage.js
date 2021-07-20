@@ -51,34 +51,30 @@ function HomePage() {
                 <div className="carousel-inner img-responsive mx-auto">
                   <div className="carousel-item active">
                     <img
-                      className="img-carousel"
+                      className="img-carousel d-block w-100"
                       src={sliderImg0}
-                      className="d-block w-100"
-                      alt="clothes image"
+                      alt="clothes"
                     />
                   </div>
                   <div className="carousel-item ">
                     <img
-                      className="img-carousel"
+                      className="img-carousel d-block w-100"
                       src={sliderImg1}
-                      className="d-block w-100"
-                      alt="clothes image"
+                      alt="clothes"
                     />
                   </div>
                   <div className="carousel-item">
                     <img
-                      className="img-carousel"
+                      className="img-carousel d-block w-100"
                       src={sliderImg2}
-                      className="d-block w-100"
-                      alt="clothes image"
+                      alt="clothes"
                     />
                   </div>
                   <div className="carousel-item">
                     <img
-                      className="img-carousel"
+                      className="img-carousel d-block w-100"
                       src={sliderImg3}
-                      className="d-block w-100"
-                      alt="clothes image"
+                      alt="clothes"
                     />
                   </div>
                 </div>
@@ -123,7 +119,7 @@ function HomePage() {
                   <img
                     className="img-fluid cardImage"
                     src={dressesCat}
-                    alt="Dresses image"
+                    alt="Dresses"
                   />
                 </div>
                 <div className="col-md-8">
@@ -131,7 +127,7 @@ function HomePage() {
                     <NavLink className=" card-title" to="/articles">
                       SS21 Spring story
                     </NavLink>
-                    <p className="card-text ">
+                    <p className="card-text">
                       OK boutique has an array of different styles for you to
                       feel yourself in, from mini and midi lengths to lace and
                       gingham styles.Take a look for casual staple.
@@ -149,7 +145,7 @@ function HomePage() {
                   <img
                     className="img-fluid cardImage"
                     src={topsCat}
-                    alt="Tops image"
+                    alt="Tops"
                   />
                 </div>
                 <div className="col-md-8">
@@ -175,7 +171,7 @@ function HomePage() {
                   <img
                     className="img-fluid cardImage"
                     src={trousersCat}
-                    alt="Trousers image"
+                    alt="Trousers"
                   />
                 </div>
 

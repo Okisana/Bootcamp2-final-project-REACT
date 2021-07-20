@@ -12,6 +12,7 @@ function Header() {
               style={{
                 maxWidth: "11%",
               }}
+              alt="logo"
             />
           </NavLink>
 

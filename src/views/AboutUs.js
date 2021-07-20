@@ -108,6 +108,7 @@ function AboutUs() {
                   className="img-fluid"
                   style={{ maxWidth: "70%", marginLeft: "50px" }}
                   src={team}
+                  alt="team"
                 />
               </div>
 
@@ -138,6 +139,7 @@ function AboutUs() {
                   className="img-fluid"
                   style={{ maxWidth: "70%", marginLeft: "50px" }}
                   src={history}
+                  alt="history"
                 />
               </div>
 
@@ -178,6 +180,7 @@ function AboutUs() {
                   className="img-fluid"
                   style={{ maxWidth: "70%", marginLeft: "50px" }}
                   src={collections}
+                  alt="store-collections"
                 />
               </div>
 
@@ -211,6 +214,7 @@ function AboutUs() {
                   className="img-fluid"
                   style={{ maxWidth: "70%", marginLeft: "50px" }}
                   src={career}
+                  alt="career"
                 />
               </div>
 
@@ -243,6 +247,7 @@ function AboutUs() {
                 width: "auto",
                 height: "300px",
               }}
+              title="map"
             ></iframe>
           </div>
           <div class="col-12 col-md-6">
