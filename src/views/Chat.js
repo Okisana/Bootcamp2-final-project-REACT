@@ -1,13 +1,15 @@
 import "../css/Chat.css";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import emmaImg from "../images/tc2.jpg";
+import emmaImg from "../images/avatar.jpg";
 import taraImg from "../images/registerImg.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
 function Chat() {
   const [inputMessage, setInputMessage] = useState("");
+
+  const [userName, setUserName] = useState("");
 
   const [messages, setMessages] = useState([
     {
@@ -31,27 +33,41 @@ function Chat() {
     },
   ]);
 
+  const inputUsername = (event) => {
+    setUserName(event.target.value);
+  };
+
   const onInputMessageChange = (event) => {
     setInputMessage(event.target.value);
   };
 
-  const sendMessageBtn = () => {
+  const sendMessageBtn = (event) => {
+    if (inputMessage == "") {
+      alert("Please write message");
+      return;
+    } else if (userName == "") {
+      alert("Please write username.");
+      return;
+    } else if (inputMessage == "" && userName == "") {
+      alert("Please write username and message");
+      return;
+    }
     setMessages([
       ...messages,
       {
         text: inputMessage,
-        username: "Tara",
-        img: taraImg,
-        myMessage: true,
+        username: userName,
+        img: userName == "Tara" ? taraImg : emmaImg,
+        myMessage: userName == "Tara" ? true : false,
         time: "now",
       },
     ]);
     setInputMessage("");
+    setUserName("");
   };
 
   const showMessages = messages.map((message, index) => {
     const alignmentClassName = message.myMessage ? "msg-self" : "msg-remote";
-
     return (
       <article
         key={index}
@@ -98,6 +114,13 @@ function Chat() {
 
       <section className="chatbox col-12 col-md-6">
         <section className="chat-window">{showMessages}</section>
+        <form className="chat-input">
+          <input
+            placeholder="Type username"
+            value={userName}
+            onChange={inputUsername}
+          />
+        </form>
         <form className="chat-input">
           <input
             onChange={onInputMessageChange}
