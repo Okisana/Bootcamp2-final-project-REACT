@@ -3,14 +3,15 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomePage from "./views/HomePage";
 import Articles from "./views/Articles";
-import Article1 from "./views/Article1";
-import Article2 from "./views/Article2";
-import Article3 from "./views/Article3";
+import Article_dresses from "./views/Article_dresses";
+import Article_tops from "./views/Article_tops";
+import Article_trousers from "./views/Article_trousers";
 import Chat from "./views/Chat";
 import Register from "./views/Register";
 import AboutUs from "./views/AboutUs";
 
 import Page404 from "./views/Page404";
+import Todo from "./views/Todo";
 
 function App() {
   return (
@@ -18,24 +19,28 @@ function App() {
       <Router>
         <Header />
         <Switch>
+          <Route path="/todo">
+            <Todo />
+          </Route>
+
           <Route exact path="/">
             <HomePage />
           </Route>
 
-          <Route path="/articles">
+          <Route exact path="/articles">
             <Articles />
           </Route>
 
-          <Route path="/article1">
-            <Article1 />
+          <Route path="/articles/dresses">
+            <Article_dresses />
           </Route>
 
-          <Route path="/article2">
-            <Article2 />
+          <Route path="/articles/tops">
+            <Article_tops />
           </Route>
 
-          <Route path="/article3">
-            <Article3 />
+          <Route path="/articles/trousers">
+            <Article_trousers />
           </Route>
 
           <Route path="/chat">
