@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import image1 from "../images/Doffshoulder.jpg";
 import image2 from "../images/DBodycon.webp";

@@ -38,23 +38,6 @@ function Article3() {
     <div>
       <div className="container">
         <Breadcrumbs paths={breadcrumbsPaths} />
-        {/* <nav className="mt-2">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <NavLink class="pageLink" exact to="/">
-                Home
-              </NavLink>
-            </li>
-            <li class="breadcrumb-item" aria-current="page">
-              <NavLink class="pageLink" exact to="/articles">
-                Articles
-              </NavLink>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">
-              All about trousers
-            </li>
-          </ol>
-        </nav> */}
 
         <div className="row pt-3">
           <div className="col-12 col-md-4 ">
