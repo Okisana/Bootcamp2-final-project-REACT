@@ -8,6 +8,56 @@ import sliderImg1 from "../images/slider-1.webp";
 import sliderImg2 from "../images/slider-2.jpg";
 import sliderImg3 from "../images/slider-3.jpg";
 function HomePage() {
+  const categories = [
+    {
+      title: "SS21 Spring story",
+      image: dressesCat,
+      text: ` OK boutique has an array of different styles for you to
+    feel yourself in, from mini and midi lengths to lace and
+    gingham styles.Take a look for casual staple.`,
+    },
+    {
+      title: "SS2 Campaign",
+      image: topsCat,
+      text: `Discover a range of women's tops at OK boutique. Crop tops
+      to off-the-shoulder and going-out tops, shop online for
+      every look. We all are in need of stylish tops.`,
+    },
+    {
+      title: " SS21 LookBook",
+      image: trousersCat,
+      text: `Women's Trousers & Leggings. From culottes and crops to
+      wide-leg and skinny styles, our latest edit of women's
+      trousers and leggings is full of go-to pieces.`,
+    },
+  ];
+
+  const categoryElements = categories.map((category, index) => {
+    return (
+      <div key={index} className="col-12 col-xl-4 mb-3">
+        <div className="card">
+          <div className="row g-0">
+            <div className="col-md-4">
+              <img
+                className="img-fluid cardImage"
+                src={category.image}
+                alt="Dresses"
+              />
+            </div>
+            <div className="col-md-8">
+              <div className="card-body">
+                <NavLink className=" card-title" to="/articles">
+                  {category.title}
+                </NavLink>
+                <p className="card-text">{category.text}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  });
+
   return (
     <div>
       <div className="container py-3">
@@ -111,86 +161,7 @@ function HomePage() {
           <div className="pb-2"> Popular categories: </div>
         </div>
 
-        <div className="row articles articlesContainer">
-          <div className="col-12 col-xl-4 mb-3">
-            <div className="card">
-              <div className="row g-0">
-                <div className="col-md-4">
-                  <img
-                    className="img-fluid cardImage"
-                    src={dressesCat}
-                    alt="Dresses"
-                  />
-                </div>
-                <div className="col-md-8">
-                  <div className="card-body">
-                    <NavLink className=" card-title" to="/articles">
-                      SS21 Spring story
-                    </NavLink>
-                    <p className="card-text">
-                      OK boutique has an array of different styles for you to
-                      feel yourself in, from mini and midi lengths to lace and
-                      gingham styles.Take a look for casual staple.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-xl-4 mb-3">
-            <div className="card">
-              <div className="row g-0">
-                <div className="col-md-4">
-                  <img
-                    className="img-fluid cardImage"
-                    src={topsCat}
-                    alt="Tops"
-                  />
-                </div>
-                <div className="col-md-8">
-                  <div className="card-body">
-                    <NavLink className="card-title" to="/articles">
-                      SS2 Campaign
-                    </NavLink>
-                    <p className="card-text">
-                      Discover a range of women's tops at OK boutique. Crop tops
-                      to off-the-shoulder and going-out tops, shop online for
-                      every look. We all are in need of stylish tops.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-xl-4 mb-3">
-            <div className="card">
-              <div className="row g-0">
-                <div className="col-md-4">
-                  <img
-                    className="img-fluid cardImage"
-                    src={trousersCat}
-                    alt="Trousers"
-                  />
-                </div>
-
-                <div className="col-md-8">
-                  <div className="card-body">
-                    <NavLink className="card-title" to="/articles">
-                      SS21 LookBook
-                    </NavLink>
-                    <p className="card-text">
-                      Women's Trousers & Leggings. From culottes and crops to
-                      wide-leg and skinny styles, our latest edit of women's
-                      trousers and leggings is full of go-to pieces.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div className="row articles articlesContainer">{categoryElements}</div>
       </div>
     </div>
   );
