@@ -27,7 +27,7 @@ function Articles() {
       to blush and white dresses. Take a look at & Other Stories for
       casual staples or check out Topshop for ribbed bodycons and
       ditsy floral prints.`,
-      link: "/article1",
+      link: "/articles/dresses",
     },
     {
       image: topCatImg,
@@ -43,7 +43,7 @@ function Articles() {
       bold prints and backless tops, while Second Skin has hundreds
       of styles to help you express your individuality. Invent your
       own style with our collection of tops for women.`,
-      link: "/article2",
+      link: "/articles/tops",
     },
     {
       image: trousersCatImg,
@@ -58,7 +58,7 @@ function Articles() {
       new workwear line-up, because that’s what working from home is
       all about, right? When jeans are off the cards, check out our
       edit of women’s trousers.`,
-      link: "/article3",
+      link: "/articles/trousers",
     },
   ];
 
