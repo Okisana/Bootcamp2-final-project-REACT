@@ -1,23 +1,20 @@
 import { NavLink } from "react-router-dom";
+import Breadcrumbs from "../components/Breadcrumbs";
 import dressCatImg from "../images/drc2.jpg";
 import topCatImg from "../images/tc2.jpg";
 import trousersCatImg from "../images/trc2.jpg";
 
 function Articles() {
+  const breadcrumbPaths = [
+    {
+      link: "/",
+      label: "Home",
+    },
+    { label: "Articles" },
+  ];
   return (
     <div className="container">
-      <nav className="mt-2">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <NavLink class="pageLink" exact to="/">
-              Home
-            </NavLink>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            Articles
-          </li>
-        </ol>
-      </nav>
+      <Breadcrumbs paths={breadcrumbPaths} />
 
       <div class="row">
         <div class="card mb-3 articleEl">

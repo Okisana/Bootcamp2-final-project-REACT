@@ -1,12 +1,19 @@
 import "../css/Chat.css";
-import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import emmaImg from "../images/avatar.jpg";
 import taraImg from "../images/registerImg.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
+import Breadcrumbs from "../components/Breadcrumbs";
 function Chat() {
+  const breadcrumbPaths = [
+    {
+      link: "/",
+      label: "Home",
+    },
+    { label: "Chat" },
+  ];
+
   const [inputMessage, setInputMessage] = useState("");
 
   const [userName, setUserName] = useState("");
@@ -99,18 +106,7 @@ function Chat() {
 
   return (
     <div className="container">
-      <nav className="mt-2">
-        <ol className="breadcrumb">
-          <li className="breadcrumb-item">
-            <NavLink className="pageLink" exact to="/">
-              Home
-            </NavLink>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            Articles
-          </li>
-        </ol>
-      </nav>
+      <Breadcrumbs paths={breadcrumbPaths} />
 
       <section className="chatbox col-12 col-md-6">
         <section className="chat-window">{showMessages}</section>

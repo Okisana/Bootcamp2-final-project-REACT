@@ -10,22 +10,20 @@ import {
   faMapMarkerAlt,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 function AboutUs() {
+  const breadcrumbPaths = [
+    {
+      link: "/",
+      label: "Home",
+    },
+    { label: "About us" },
+  ];
+
   return (
     <div className="container">
-      <nav className="mt-2">
-        <ol className="breadcrumb">
-          <li className="breadcrumb-item">
-            <NavLink exact to="/">
-              Home
-            </NavLink>
-          </li>
-          <li className="breadcrumb-item active" aria-current="page">
-            About us
-          </li>
-        </ol>
-      </nav>
+      <Breadcrumbs paths={breadcrumbPaths} />
 
       <div className="tabsContainer">
         <ul

@@ -1,8 +1,17 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import registerImg from "../images/registerImg.jpg";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 function Register() {
+  const breadcrumbPaths = [
+    {
+      link: "/",
+      label: "Home",
+    },
+    { label: "Login" },
+  ];
+
   const [password, setPassword] = useState("");
   const [repeatPassword, setRepeatPassword] = useState("");
   const getPassword = (event) => {
@@ -25,18 +34,7 @@ function Register() {
 
   return (
     <div className="container text-dark px-5">
-      <nav className="">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <NavLink class="pageLink" exact to="/">
-              Home
-            </NavLink>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            Login
-          </li>
-        </ol>
-      </nav>
+      <Breadcrumbs paths={breadcrumbPaths} />
 
       <h5 className="mb-1">Register:</h5>
 
