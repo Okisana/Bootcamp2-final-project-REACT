@@ -1,11 +1,17 @@
-import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import image2 from "../images/tro3.jpg";
 import image3 from "../images/tro2.webp";
 import image4 from "../images/tro1.webp";
 import { SRLWrapper } from "simple-react-lightbox";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 function Article3() {
+  const breadcrumbsPaths = [
+    { link: "/", label: "Home" },
+    { link: "/articles", label: "Articles" },
+    { label: "All about trousers" },
+  ];
+
   const images = [image2, image3, image4];
 
   const [BigImage, setImage] = useState(image4);
@@ -31,7 +37,8 @@ function Article3() {
   return (
     <div>
       <div className="container">
-        <nav className="mt-2">
+        <Breadcrumbs paths={breadcrumbsPaths} />
+        {/* <nav className="mt-2">
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
               <NavLink class="pageLink" exact to="/">
@@ -47,7 +54,7 @@ function Article3() {
               All about trousers
             </li>
           </ol>
-        </nav>
+        </nav> */}
 
         <div className="row pt-3">
           <div className="col-12 col-md-4 ">

@@ -27,6 +27,7 @@ function Articles() {
       to blush and white dresses. Take a look at & Other Stories for
       casual staples or check out Topshop for ribbed bodycons and
       ditsy floral prints.`,
+      link: "/article1",
     },
     {
       image: topCatImg,
@@ -42,6 +43,7 @@ function Articles() {
       bold prints and backless tops, while Second Skin has hundreds
       of styles to help you express your individuality. Invent your
       own style with our collection of tops for women.`,
+      link: "/article2",
     },
     {
       image: trousersCatImg,
@@ -56,6 +58,7 @@ function Articles() {
       new workwear line-up, because that’s what working from home is
       all about, right? When jeans are off the cards, check out our
       edit of women’s trousers.`,
+      link: "/article3",
     },
   ];
 
@@ -73,7 +76,7 @@ function Articles() {
             </div>
             <div className="col-12 col-md-9">
               <div className="card-body">
-                <NavLink className="article-title" to="/article1">
+                <NavLink className="article-title" to={article.link}>
                   {article.title}
                 </NavLink>
                 <p className="card-text articleText">{article.text}</p>

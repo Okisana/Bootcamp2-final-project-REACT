@@ -1,14 +1,21 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import image2 from "../images/Doffshoulder.jpg";
-import image3 from "../images/DBodycon.webp";
-import image4 from "../images/dMidi.webp";
+import image1 from "../images/Doffshoulder.jpg";
+import image2 from "../images/DBodycon.webp";
+import image3 from "../images/dMidi.webp";
 import { SRLWrapper } from "simple-react-lightbox";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 function Article1() {
-  const images = [image2, image3, image4];
+  const breadcrumbsPaths = [
+    { link: "/", label: "Home" },
+    { link: "/articles", label: "Articles" },
+    { label: "All about dresses" },
+  ];
 
-  const [BigImage, setImage] = useState(image4);
+  const images = [image1, image2, image3];
+
+  const [BigImage, setImage] = useState(image3);
 
   const updateImage = (event) => {
     setImage(event.target.src);
@@ -31,23 +38,7 @@ function Article1() {
   return (
     <div>
       <div className="container">
-        <nav className="mt-2">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <NavLink class="pageLink" exact to="/">
-                Home
-              </NavLink>
-            </li>
-            <li class="breadcrumb-item" aria-current="page">
-              <NavLink class="pageLink" exact to="/articles">
-                Articles
-              </NavLink>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">
-              All about dresses
-            </li>
-          </ol>
-        </nav>
+        <Breadcrumbs paths={breadcrumbsPaths} />
 
         <div className="row pt-3">
           <div className="col-12 col-md-4 ">
