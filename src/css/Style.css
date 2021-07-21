@@ -48,3 +48,6 @@ a:hover,
 .tabsContainer {
   background-color: #f1d3bc !important;
 }
+.empty {
+  height: 210px;
+}
