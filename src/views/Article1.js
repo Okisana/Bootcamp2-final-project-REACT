@@ -3,6 +3,7 @@ import { useState } from "react";
 import image2 from "../images/Doffshoulder.jpg";
 import image3 from "../images/DBodycon.webp";
 import image4 from "../images/dMidi.webp";
+import { SRLWrapper } from "simple-react-lightbox";
 
 function Article1() {
   const images = [image2, image3, image4];
@@ -65,7 +66,9 @@ function Article1() {
               </div>
             </div>
 
-            <div className="row pt-3">{imagesList}</div>
+            <SRLWrapper>
+              <div className="row pt-3">{imagesList}</div>
+            </SRLWrapper>
           </div>
 
           <div className="col-10 col-md-8">
