@@ -101,28 +101,28 @@ function HomePage() {
                 <div className="carousel-inner img-responsive mx-auto">
                   <div className="carousel-item active">
                     <img
-                      className="img-carousel d-block w-100"
+                      className="img-carousel d-block w-100 img-fluid"
                       src={sliderImg0}
                       alt="clothes"
                     />
                   </div>
-                  <div className="carousel-item ">
+                  <div className="carousel-item">
                     <img
-                      className="img-carousel d-block w-100"
+                      className="img-carousel d-block w-100 img-fluid"
                       src={sliderImg1}
                       alt="clothes"
                     />
                   </div>
                   <div className="carousel-item">
                     <img
-                      className="img-carousel d-block w-100"
+                      className="img-carousel d-block w-100 img-fluid"
                       src={sliderImg2}
                       alt="clothes"
                     />
                   </div>
                   <div className="carousel-item">
                     <img
-                      className="img-carousel d-block w-100"
+                      className="img-carousel d-block w-100 img-fluid"
                       src={sliderImg3}
                       alt="clothes"
                     />
