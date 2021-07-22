@@ -9,9 +9,7 @@ import Article_trousers from "./views/Article_trousers";
 import Chat from "./views/Chat";
 import Register from "./views/Register";
 import AboutUs from "./views/AboutUs";
-
 import Page404 from "./views/Page404";
-import Todo from "./views/Todo";
 
 function App() {
   return (
@@ -19,10 +17,6 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route path="/todo">
-            <Todo />
-          </Route>
-
           <Route exact path="/">
             <HomePage />
           </Route>
